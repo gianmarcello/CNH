@@ -1,0 +1,23 @@
+package ex2;
+import java.util.Scanner;
+public class cnh {
+
+	public static void main(String[] args) {
+	int num;
+	// declarar a variavel;
+		try (Scanner ler = new Scanner(System.in)){
+			System.out.print("se voce fez os tres exames (psico, jurid e pratico) digite 1 se nao 0");
+			num = ler.nextInt();
+			// receber e ler se ele concluiu todos os passos;
+			
+			if (num == 1) {
+				System.out.print("Parabens voce pode retirar sua CNH");
+				// se tiver cumprido todas as etapas ele pode retirar a CNH;
+			}
+			else {
+				System.out.print("lamento, pois nao esta completo o processo para retirar, va ao detran e confira o que falta");
+				// se nao tiver cumprido um passo ele nao pode tirar sua CNH;
+			}
+}
+}
+}
